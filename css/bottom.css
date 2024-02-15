@@ -1,0 +1,108 @@
+.weather_details > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather_details ul li {
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forecast__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.forecast__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(225deg,rgb(255,255,255,0.1),rgb(255,255,255,0.3));
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+
+.forecast__card > p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.forecast_icon {
+    width: 50px;
+}
+@media screen and (max-width: 380px) {
+
+    .forecast__container {
+        margin: 20px 0;
+    }
+
+    .forecast__card > p {
+        margin: 10px 0;
+    }
+
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 2024px) and (orientation:portrait) {
+    
+    .weather_details ul li {
+        font-size: 20px;
+        margin-right: 40px;
+    }
+    .weather_details > ul {
+        justify-content: flex-start;
+    }
+    .forecast__container {
+        justify-content: flex-start;
+        margin: 40px 0;
+    }
+    .forecast__card {
+        padding: 20px;
+        margin-right: 24px;
+    }
+    .forecast__card > p {
+        font-size: 22px;
+        margin: 20px;
+    }
+    .forecast_icon {
+        width: 75px;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 2024px) and (orientation:landscape) {
+
+    .weather_details ul li {
+        font-size: 16px;
+        margin-right: 40px;
+    }
+    .weather_details > ul {
+        justify-content: flex-start;
+    }
+    .forecast__container {
+        justify-content: flex-start;
+        margin: 25px 0;
+    }
+    .forecast__card {
+        padding: 10px;
+        margin-right: 24px;
+    }
+    .forecast__card > p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .forecast_icon {
+        width: 50px;
+    }
+
+
+
+}

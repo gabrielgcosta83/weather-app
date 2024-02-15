@@ -1,0 +1,48 @@
+body {
+    background-color: #030637;
+    color: white;
+}
+
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6          { 
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-weight: bolder;
+}
+
+p, a, li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+}
+
+.panel {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #392467, #A367B1);
+    border-radius: 30px;
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+ .button_design {
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(225deg,rgb(255,255,255,0.1),rgb(255,255,255,0.3));
+    border-radius: 5px;
+    border-color: white;
+    border-width: 0px;
+    border-style: outset;
+}

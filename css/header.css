@@ -1,0 +1,171 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.location__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location__container h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0px 0px 0px 8px;
+    text-shadow: 0 8px 5px rgba(0, 0, 0, .3);
+}
+
+.myloc_icon {
+    transform: scale(0.75);
+}
+
+
+.button__container {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(225deg,rgb(255,255,255,0.1),rgb(255,255,255,0.3));
+    border-radius: 5px;
+    border-color: white;
+    border-width: 0px;
+    border-style: outset;
+    transition: width 1s;
+}
+
+.search__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.search_icon, .close_icon {
+    line-height: 44px;
+    margin-left: 10px;
+    transform: scale(1.25);
+    color: white;
+}
+
+.input__text {
+    line-height: 40px;
+    border: 0px;
+    background-color: transparent;
+    font-size: 24px;
+    color: white;
+}
+
+.input__text::placeholder {
+    color: #A367B1;
+}
+
+.show {
+    display: flex;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.errormsg {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.errormsg__active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 380px) {
+
+    .header {
+        margin-top: 20px;
+    }
+
+    .location__container h3 {
+        font-size: 20px;
+    }
+
+    .button__container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+
+    .search_icon, .close_icon {
+        line-height: 40px;
+        margin-left: 8px;
+    }
+
+    .input__text {
+        line-height: 36px;
+        font-size: 20px;
+    }
+
+    .errormsg {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-device-width: 767px) and (max-device-height:767px) {
+    
+    .header {
+        margin-top: 40px;
+    }
+
+    .panel {
+        padding: 0 40px;
+    }
+
+    .myloc_icon {
+        transform: scale(1.25);
+    }
+    .location__container h3 {
+        font-size: 30px;
+        margin-left: 13px;
+    }
+    .button__container {
+        width: 55px;
+        height: 55px;
+    }
+    .search_icon, .close_icon {
+        line-height: 54px;
+        transform: scale(1.75);
+        margin-left: 17px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .input__text {
+        line-height: 54px;
+        font-size: 30px;
+        width:85%;
+    }
+
+    .errormsg {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-height:1024px) {
+
+
+}
